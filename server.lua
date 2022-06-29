@@ -3,6 +3,7 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 RegisterServerEvent('maltasmoke:smoke')
 AddEventHandler('maltasmoke:smoke', function(source, posx, posy, posz, ped)
+  print('hi')
    local _source = ped
    local bposx = posx
    local bposy = posy

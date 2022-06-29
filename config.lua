@@ -1,6 +1,5 @@
 Config = {}
-Config.command = 'heli'
-Config.cammandon = true --Should the Command be activated
+Config.commandon = true --Should the Command be activated
 Config.checkjob = true --Check if plyer has job for using command
 Config.jobs = {"ambulance", "police"} --Allowed Job (For using Job lock ckeckjob == true)
 Config.prop = 'proj_flare_fuse' --flare effect 
