@@ -6,3 +6,4 @@ I decided not to get the Z Value for the Position by the ground because when the
 should land here.
 You can configure the Command,the Job (If somebody needs a job to use the command), If the JOblock should be disabled,
 you can configure the prop that is in use and the time that the flare should be visible.
+My next plan for this script is to add a usable item (Esx)
