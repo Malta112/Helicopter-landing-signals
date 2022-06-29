@@ -35,18 +35,18 @@ RegisterNetEvent('maltasmoke:itemsmoke')
 AddEventHandler('maltasmoke:itemsmoke', function(source)
 	smoke()
 end)
-RegisterCommand(Config.command, function()
+RegisterCommand('heli', function()
 	if Config.commandon then
 		smoke()
 	else 
-		ShowNotification('The Command is disabled!!!')
+		print('error')
 	end
 end)
 
  function smoke () 
 	if Config.checkjob then
-		for k, v in pairs(location.ESX.checkJob.jobs) do
-			if xPlayer.job.name == v then
+		for k, v in pairs(Config.jobs) do
+			if ESX.GetPlayerData().job.name == v then
 				local retval --[[ vector3 ]] =
 				GetEntityCoords(PlayerPedId(), true)
 				local source = PlayerPedId()
