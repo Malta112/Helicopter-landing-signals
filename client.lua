@@ -39,7 +39,7 @@ RegisterCommand('heli', function()
 	if Config.commandon then
 		smoke()
 	else 
-		ShowNotification('The Command is disabled!!!')
+		print('error')
 	end
 end)
 
