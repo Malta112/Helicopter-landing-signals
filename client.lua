@@ -31,7 +31,19 @@ AddEventHandler('maltasmoke:allsmoke', function(posx, posy, posz, bool)
 
 
 end)
-RegisterCommand(Config.Command, function() 
+RegisterNetEvent('maltasmoke:itemsmoke')
+AddEventHandler('maltasmoke:itemsmoke', function(source)
+	smoke()
+end)
+RegisterCommand(Config.command, function()
+	if Config.commandon then
+		smoke()
+	else 
+		ShowNotification('The Command is disabled!!!')
+	end
+end)
+
+ function smoke () 
 	if Config.checkjob then
 		for k, v in pairs(location.ESX.checkJob.jobs) do
 			if xPlayer.job.name == v then
@@ -85,7 +97,7 @@ RegisterCommand(Config.Command, function()
 	end
 	
     
-end)
+end
 
 
 
